@@ -33,7 +33,7 @@ h2 {
     background: rgb(255 255 255 / 7%);
     border: 1px solid rgba(255, 255, 255, 0.03);
     border-radius: 9px;
-    display: block;
+    display: inline-block;
     width: max-content;
     padding: 0.8rem 2.5rem;
     margin: 3rem 0rem 3rem 0rem;
@@ -65,4 +65,11 @@ h2 {
 }
 
 
-
+@media (min-width: 100px) and (max-width: 800px) {
+.btn-confira {
+    display: block;
+}
+.about-place.header {
+    margin-top: 7rem;
+}
+}
