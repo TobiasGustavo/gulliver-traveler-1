@@ -81,3 +81,47 @@ div.item .subtitle-text {
 .subtitle-text {
   font-family: 'Jost', sans-serif;
 }
+
+.info-box__img {
+    border-bottom: 0.8px solid #ddd;
+    height: 250px;
+    width: 100%;
+}
+
+.info-box__img img {
+    width: 100%;
+}
+
+.info-box__header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 11px;
+    color: #666;
+}
+
+.info-box__content {
+    padding: 12px 20px;
+    flex: 1;
+}
+
+.info-box__title {
+    line-height: normal;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 9px;
+    font-size: 20px;
+    color: #444;
+}
+
+.info-box__description {
+    letter-spacing: -0.3px;
+    font-weight: normal;
+    line-height: 1.25;
+    overflow: hidden;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #888;
+}
