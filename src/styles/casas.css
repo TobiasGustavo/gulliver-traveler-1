@@ -69,6 +69,7 @@
 
     .images-place, .about-place {
         width: 100%;
+        margin-top: 6rem;
     }
 
     .about-place strong:before {

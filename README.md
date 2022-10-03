@@ -15,8 +15,8 @@
 * [1. Sobre](#1-sobre)
 * [2. Planejamento Ágil](#2-Planejamento-Ágil)
 * [3. Kanban](#3-Kanban)
-* [4. Prótipo](#4-Prótipo)
-* [5. Desenvolvedoras](#5-Desenvolvedoras)
+* [4. Prótotipo](#4-Prótotipo)
+* [5. Desenvolvedores](#5-Desenvolvedores)
 
 ## 1. Sobre
 Gulliver Traveler é um Web Site de viagens e turismo que está sendo desenvolvido durante o curso de graduação de Sistemas para Internet da FIAP. A primeira etapa criada deste projeto, consiste em um pequeno compilado de pontos túristicos utilizados na filmagem da serie <img  width="15%" src="https://user-images.githubusercontent.com/37550557/189577544-52a6fd30-85ba-496f-a284-28d0fed19fd0.png" />.
@@ -39,7 +39,7 @@ Se quiser saber um pouco mais sobre o planejamento, basta acessar esse [link](ht
  <img src="https://user-images.githubusercontent.com/37550557/189559934-9226c3f3-5fce-4615-8e50-65edacad3bc7.png"/>
 </div>
 
-## 4. Prótipo
+## 4. Prótotipo
 
 O projeto foi desenvolvido utilizando protótipo realizado no Figma conforme imagem abaixo. Para ter acesso ao prótipo e todas as informações sobre, acesse [AQUI](https://www.figma.com/file/Du9rswE4Zw8bqqhcNuANpX/Untitled?node-id=0%3A1)
 

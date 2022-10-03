@@ -35,8 +35,22 @@ ul li {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 17px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.about-place.header {
+    margin-top: 8rem;
+}
+
+
+@media (min-width: 100px) and (max-width: 800px) {
+    .btn-confira {
+        display: block;
+    }
+    .about-place.header {
+        margin-top: 7rem;
+    }
 }
