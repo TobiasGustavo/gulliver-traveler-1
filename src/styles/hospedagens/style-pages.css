@@ -306,16 +306,23 @@ header {
     header .suitcases {
         width: 100%;
     }
-
-    header .suitcases img {
-        margin: 0;
-    }
-
     header {
         margin-top: 1rem;
+    }
+    
+    header .suitcases img {
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
 
     .header-titles {
         margin-top: 2rem;
     }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
 }
