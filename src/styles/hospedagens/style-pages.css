@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"); 
-
-
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"); :root {
     --main-color: #F88342;
     --headings-color: #403937;
     --body-color: #8D8686;
@@ -16,6 +13,69 @@ body {
     max-width: 1190px;
     margin: auto;
     padding: 1rem;
+}
+
+.header-titles h2 {
+    font-weight: 800;
+    font-size: 3.2rem;
+    color: var(--headings-color);
+}
+
+.subtitle {
+    color: var(--headings-color);
+    margin-top: 1rem;
+}
+
+.container.header.flex {
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+header .suitcases img {
+    height: auto;
+    margin: 0;
+    width: auto;
+}
+
+header:after {
+    background: rgba(248, 131, 65, 0.06);
+    filter: blur(31.5px);
+    width: 275px;
+    height: 180px;
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+header:before {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 170px;
+    background: rgba(108, 239, 215, 0.09);
+    filter: blur(31.5px);
+    left: 0px;
+    content: "";
+}
+
+header {
+    margin-bottom: -2rem;
+}
+
+.header-titles {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.location {
+    width: 100%;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--headings-color);
 }
 
 .main-img {
@@ -164,7 +224,22 @@ body {
     margin-right: 1rem;
 }
 
-.user-and-stars strong {
+.hotel-desc-main li {
+    margin-left: 1rem;
+}
+
+.hotel-desc-main ul {
+    margin-bottom: 1.4rem;
+}
+
+.flex.desc-main-flex {
+    margin: 0;
+    justify-content: space-between;
+}
+
+.hotel-comfort strong {
+    margin-bottom: 0.6rem;
+    display: block;
 }
 
 .text-review {
@@ -173,15 +248,18 @@ body {
     font-size: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+.fa-star.gray {
+    color: #0000001c;
+}
 
+@media only screen and (max-width: 600px) {
     .main-img, .infos-hotel, .guest-reviews-head, .guest-reviews-comments {
         width: 100%;
     }
 
     .hotel-gallery img {
-    width: 48%;
-    margin-bottom: 1rem;
+        width: 48%;
+        margin-bottom: 1rem;
     }
 
     .hotel-gallery {
@@ -204,11 +282,40 @@ body {
         border-top: 1px solid rgba(0, 0, 0, 0.06);
         padding-top: 2rem;
     }
+
     .prices-and-booking {
         flex-direction: column;
     }
-    
+
     .btn {
         margin-top: 1rem;
+    }
+
+    .flex.desc-main-flex {
+        flex-direction: column;
+    }
+
+    .container.header.flex {
+        flex-direction: column;
+    }
+
+    .header-titles h2 {
+        font-size: 2rem;
+    }
+
+    header .suitcases {
+        width: 100%;
+    }
+
+    header .suitcases img {
+        margin: 0;
+    }
+
+    header {
+        margin-top: 1rem;
+    }
+
+    .header-titles {
+        margin-top: 2rem;
     }
 }
