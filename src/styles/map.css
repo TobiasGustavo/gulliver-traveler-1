@@ -81,28 +81,46 @@ section.container {
   font-family: 'Jost', sans-serif;
 }
 
-.subtitle-text, .title-text strong {
-  font-weight: normal;
+.info-box__img {
+    border-bottom: 0.8px solid #ddd;
+    height: 250px;
+    width: 100%;
 }
 
-
-@media (min-width: 100px) and (max-width: 800px) {
-.title-container h1, .title-container h4 {
-  margin: 0;
-  line-height: initial;
+.info-box__img img {
+    width: 100%;
 }
 
-.title-container {
-  padding: 2rem;
+.info-box__header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 11px;
+    color: #666;
 }
 
-.item {
-  width: 47%;
-  margin-bottom: 3rem;
+.info-box__content {
+    padding: 12px 20px;
+    flex: 1;
 }
 
-.container-button {
-  width: 90%;
+.info-box__title {
+    line-height: normal;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 9px;
+    font-size: 20px;
+    color: #444;
 }
 
+.info-box__description {
+    letter-spacing: -0.3px;
+    font-weight: normal;
+    line-height: 1.25;
+    overflow: hidden;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #888;
 }
