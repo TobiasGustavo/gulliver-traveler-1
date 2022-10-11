@@ -157,10 +157,13 @@ div.card:nth-child(1) {
   background: url(../assets/img/castle-ward-2.jpg)
 }
 
-a.btn {
+a.btn-explorer{
   background: #f88745;
   border: 1px solid #f88745;
   margin-bottom: 10px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 a.link__card {
