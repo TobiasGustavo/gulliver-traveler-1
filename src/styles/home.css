@@ -93,8 +93,11 @@ div > a:hover  {
 div.dropdown {
   padding: 20px;
   margin-right: 10px;
-  background: white;
   float: left;
+}
+
+.btn {
+  background: #F5F5F5 !important;
 }
 
 div.inline {
