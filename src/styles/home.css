@@ -1,24 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-  background: #F5F5F5;
+    background: #F5F5F5;
   color: #403937;
-}
-
-div.container-logo {
-  padding: 13px 0px 0px 160px;
-  width: 122px;
-  height: 65px;
-}
-
-a.item {
-  color: #f98748;
-  text-decoration: none;
-  font-family: 'Inter';
-  margin: 25px 10px 0px 50px;
-  text-align: center;
-  font-weight: 900;
+  font-family: Inter, Arial, Tahoma, sans-serif;
 }
 
 * {
@@ -27,39 +12,100 @@ a.item {
   box-sizing: border-box;
 }
 
+.container {
+    max-width: 1190px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.header-titles h2 {
+  font-weight: 800;
+  font-size: 3.2rem;
+  color: var(--headings-color);
+}
+
+.subtitle {
+  color: var(--headings-color);
+  margin-top: 1rem;
+}
+
+.container.header.flex {
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+header .suitcases img {
+  height: auto;
+  margin: 0;
+  width: auto;
+}
+
+header:after {
+  background: rgba(248, 131, 65, 0.06);
+  filter: blur(31.5px);
+  width: 275px;
+  height: 180px;
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+header:before {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 170px;
+  background: rgba(108, 239, 215, 0.09);
+  filter: blur(31.5px);
+  left: 0px;
+  content: "";
+}
+
+header {
+  margin-bottom: -2rem;
+}
+
+.header-titles {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+div > a:hover  {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+div.dropdown {
+  padding: 20px;
+  margin-right: 10px;
+  background: white;
+  float: left;
+}
+
 div.inline {
   display: inline-flex;
   width: 100%;
 }
 
-h1.title {
-  width: 500px;
-  /* height: 124px; */
-  margin-left: 160px;
-  margin-top: 150px;
-
-  font-family: 'Inter';
-  font-style: normal;
+.header-titles h2 {
   font-weight: 800;
-  font-size: 48px;
-  line-height: 130%;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-h4.subtitle {
-  width: 400px;
-  height: 52px;
-  margin-left: 160px;
-  margin-top: 22px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
-
-  font-stretch: 100;
+  font-size: 3.2rem;
+  color: #403937;
 }
 
 div.container-suitcases {
@@ -104,6 +150,28 @@ div.card {
   margin-top: 60px;
 }
 
+div.card:nth-child(1) {
+  background: url(../assets/img/castle-ward-2.jpg)
+}
+
+a.btn {
+  background: #f88745;
+  border: 1px solid #f88745;
+  margin-bottom: 10px;
+}
+
+a.link__card {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
+div.card:nth-child(2) {
+  background: url(../assets/img/hospedagens/ibis-styles-1.jpg);
+}
+
+
 .card__container {
   width: 354px;
   height: 201px;
@@ -120,7 +188,7 @@ div.card {
 }
 
 span {
-  margin-left: 10px;
+  margin: 20px 0px 0px 10px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -129,9 +197,10 @@ span {
 
 .fa-star {
   color: #E5BA20;
+  margin-top: 10px;
 }
 
-p.star__container>i:last-child {
+p.star__container>em:last-child {
   color: #E2E2E2
 }
 
@@ -238,7 +307,7 @@ p.by-night {
 
     font-stretch: 100;
   }
-  
+
   img.suitcases {
     width: 450px;
     height: 560px;
@@ -442,5 +511,6 @@ p.by-night {
 
     background: #FFFFFF;
     border-radius: 31px;
+    b
   }
 }
