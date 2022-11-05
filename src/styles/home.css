@@ -66,6 +66,17 @@ header {
   margin-bottom: -2rem;
 }
 
+.navbar {
+  display: none ;
+  justify-content: start;
+}
+
+#logo {
+  width: 164;
+  height: 56;
+  margin: 0px 0px 0px 10px;
+}
+
 .header-titles {
   display: flex;
   align-items: center;
@@ -92,8 +103,6 @@ div > a:hover  {
 
 div.dropdown {
   padding: 20px;
-  margin-right: 10px;
-  float: left;
 }
 
 .btn {
@@ -517,6 +526,5 @@ p.by-night {
 
     background: #FFFFFF;
     border-radius: 31px;
-    b
   }
 }
