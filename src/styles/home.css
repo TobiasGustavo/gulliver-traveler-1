@@ -83,6 +83,9 @@ header {
   flex-wrap: wrap;
   align-content: center;
 }
+#carouselExampleIndicators{
+  margin: 25px;
+}
 
 .flex {
   display: flex;
@@ -133,8 +136,6 @@ img.suitcases {
 .accommodation__title {
   width: 449px;
   height: 42px;
-  margin-top: 0px;
-  margin-left: 70px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -339,8 +340,6 @@ p.by-night {
   .accommodation__title {
     width: 449px;
     height: 42px;
-    margin-top: 0px;
-    margin-left: 170px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -403,8 +402,6 @@ p.by-night {
   .accommodation__title {
     width: 449px;
     height: 42px;
-    margin-top: 0px;
-    margin-left: 120px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -497,8 +494,6 @@ p.by-night {
   .accommodation__title {
     width: 449px;
     height: 42px;
-    margin-top: 0px;
-    margin-left: 60px;
 
     font-family: 'Inter';
     font-style: normal;

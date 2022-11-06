@@ -34,6 +34,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+
+   </script>
 </head>
 
 <body>
@@ -79,6 +83,33 @@
     </div>
 
 
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../src/assets/img/hospedagens/ape-paulista-1.webp" class="d-block w-100" width="100" height="480">
+        </div>
+        <div class="carousel-item">
+          <img src="../src/assets/img/hospedagens/ibis-styles-1.jpg" class="d-block w-100" width="100" height="480">
+        </div>
+        <div class="carousel-item">
+          <img src="../src/assets/img/hospedagens/pullman-1.jpg" class="d-block w-100" width="100" height="480">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <div class="container header flex">
       <div class="header-titles">
         <h2 class="title">Encontre a sua <br> hospedagem perfeita</h1>
@@ -89,12 +120,12 @@
         <img class="suitcases" src="./assets/img/hospedagens/top.png" alt="Malas de viagem">
       </div>
     </div>
+    <h3 class="accommodation__title">Hospedagens: São Paulo, SP</h3>
   </header>
-
-  <h3 class="accommodation__title">Hospedagens: São Paulo, SP</h3>
+  
+  
   <section class="grid-container bottom__space">
-
-    <div class="card grid-item">
+  <div class="card grid-item">
       <a class="link__card" href="./pages/explore.html">
         <div class="card__container">
           <div class="info-box__content">
