@@ -108,9 +108,7 @@ div.dropdown {
   padding: 20px;
 }
 
-.btn {
-  background: #F5F5F5 !important;
-}
+
 
 div.inline {
   display: inline-flex;
@@ -152,6 +150,51 @@ section.grid-container {
   justify-content: center;
   align-items: center;
   display: grid;
+}
+
+section.grid-containercar {
+  grid-template-columns: auto auto ;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+
+section.grid-containertext {
+  grid-template-columns: auto auto ;
+  justify-content: left;
+  align-items: left;
+  display: grid;
+  
+  border-radius: 31px;
+  margin-left: 50px;
+  margin-top: 60px;
+
+
+}
+  div.cardcar {
+    border-radius: 31px;
+    width: 354px;
+    height: 473px;
+    margin-left: 50px;
+    margin-top: 60px;
+
+  }
+
+  div.cardcar > .card-img-top  {
+    width: 100%;
+    height: 250px;
+    border-radius: 31px 31px 0px 0px;
+
+  }
+
+div.card {
+  background: url(../assets/img/edificio.png);
+  border-radius: 31px;
+  width: 600px;
+  height: 473px;
+  margin-left: 50px;
+  margin-top: 60px;
 }
 
 div.card {
@@ -412,7 +455,7 @@ p.by-night {
     color: #403937;
   }
 
-  div.card {
+  /*div.card */{
     background: url(../assets/img/edificio.png);
     border-radius: 31px;
     width: 300px;
@@ -504,7 +547,7 @@ p.by-night {
     color: #403937;
   }
 
-  div.card {
+  //*div.card*// {
     background: url(../assets/img/edificio.png);
     border-radius: 31px;
     width: 300px;
