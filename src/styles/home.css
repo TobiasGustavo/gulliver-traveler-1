@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-    background: #F5F5F5;
+  background: #F5F5F5 !important;
   color: #403937;
   font-family: Inter, Arial, Tahoma, sans-serif;
 }
@@ -13,14 +13,30 @@ body {
 }
 
 .container {
-    max-width: 1190px;
-    margin: auto;
-    padding: 1rem;
+  max-width: 1190px;
+  margin: auto;
+  padding: 1rem;
+}
+div.header-container {
+  display: block;
+  background: white;
+  width: 420px;
+  border-radius: 31px;
 }
 
-.header-titles h2 {
+div.header-text {
+  padding: 20px;
+}
+div.header-titles h2 {
   font-weight: 800;
   font-size: 3.2rem;
+  color: var(--headings-color);
+}
+
+div.header-titles-car h2 {
+  margin-top: 30px;
+  font-weight: 800;
+  font-size: 2rem;
   color: var(--headings-color);
 }
 
@@ -67,7 +83,7 @@ header {
 }
 
 .navbar {
-  display: none ;
+  display: none;
   justify-content: start;
 }
 
@@ -83,7 +99,8 @@ header {
   flex-wrap: wrap;
   align-content: center;
 }
-#carouselExampleIndicators{
+
+#carouselExampleIndicators {
   margin: 25px;
 }
 
@@ -99,16 +116,10 @@ a {
   text-decoration: none;
 }
 
-div > a:hover  {
+div>a:hover {
   text-decoration: none;
   text-decoration-color: none;
 }
-
-div.dropdown {
-  padding: 20px;
-}
-
-
 
 div.inline {
   display: inline-flex;
@@ -152,13 +163,15 @@ section.grid-container {
   display: grid;
 }
 
-section.grid-containercar {
-  grid-template-columns: auto auto ;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-}
 
+section.grid-container-car {
+  /* max-width: 1260px; */
+  grid-template-columns: auto auto ;
+  display: grid;
+  float: right;
+  margin: auto;
+
+}
 
 section.grid-containertext {
   grid-template-columns: auto auto ;
@@ -172,13 +185,21 @@ section.grid-containertext {
 
 
 }
+
+div.grid-containercar {
+  grid-template-columns: auto auto ;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
   div.cardcar {
     border-radius: 31px;
     width: 354px;
     height: 473px;
     margin-left: 50px;
     margin-top: 60px;
-
+    background: white !important;
+    border-radius: 0px 0px 31px 31px;
   }
 
   div.cardcar > .card-img-top  {
@@ -188,29 +209,32 @@ section.grid-containertext {
 
   }
 
-div.card {
-  background: url(../assets/img/edificio.png);
-  border-radius: 31px;
-  width: 600px;
-  height: 473px;
-  margin-left: 50px;
-  margin-top: 60px;
-}
-
-div.card {
-  background: url(../assets/img/edificio.png);
-  border-radius: 31px;
+img.card-content {
   width: 354px;
-  height: 473px;
-  margin-left: 50px;
-  margin-top: 60px;
+  height: 201px;
+  background: #FFFFFF;
+  left: 181px;
+  top: 1582px;
+  /* position: absolute; */
+  z-index: 1;
+  border-radius: 31px;
 }
 
-div.card:nth-child(1) {
-  background: url(../assets/img/castle-ward-2.jpg)
+img.card-img-top {
+  border-radius: 31px 32px 0px 0px;
+  width: 354px;
+  height: 300px;
 }
 
-a.btn-explorer{
+div.card-hosting {
+  width: 354px !important;
+  border-radius: 31px;
+  border: none;
+  margin: 30px;
+  background: #FFFFFF;
+}
+
+button.btn-explorer {
   background: #f88745;
   border: 1px solid #f88745;
   margin-bottom: 10px;
@@ -226,16 +250,12 @@ a.link__card {
 p {
   margin-bottom: 0px !important;
 }
-div.card:nth-child(2) {
-  background: url(../assets/img/hospedagens/ibis-styles-1.jpg);
-}
-
 
 .card__container {
-  width: 354px;
+  width: 353px;
   height: 201px;
-  left: 159px;
-  margin-top: 300px;
+  /* left: 159px; */
+  /* margin-top: 300px; */
 
   background: #FFFFFF;
   border-radius: 31px;
@@ -246,7 +266,7 @@ div.card:nth-child(2) {
   margin-bottom: 10px;
 }
 
-span {
+span.star__container {
   margin: 20px 0px 0px 10px;
   font-family: 'Inter';
   font-style: normal;
@@ -254,19 +274,36 @@ span {
   font-size: 15px;
 }
 
-.fa-star {
+div.card-hosting>a {
+  color: #8D8686;
+}
+
+em.fa-solid {
   color: #E5BA20;
   margin-top: 10px;
 }
 
-p.star__container>em:last-child {
-  color: #E2E2E2
+em.fas {
+  color: #E2E2E2;
+  margin-top: 10px;
 }
+
+.fa-person-swimming,
+.fa-wind,
+.fa-wifi {
+  color: #8D8585 !important;
+  margin-right: 5px;
+}
+
 
 h2.info-box__title {
   margin-left: 30px;
   font-family: 'Inter';
+  font-weight: 700;
   font-size: 23px;
+  display: flex;
+  align-items: flex-end;
+  color: #403937;
 }
 
 hr {
@@ -332,6 +369,105 @@ p.by-night {
   margin-bottom: 100px;
 }
 
+/* Button Accessibility */
+div.dropdown {
+  padding: 20px;
+  top: 200px
+}
+
+div.dropdown-menu {
+    position: absolute;
+    top: 58px;
+    left: 193px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0.2rem;
+    
+}
+
+button#accessibility:active {
+  border: none;
+}
+
+button#accessibility:focus {
+  box-shadow: none;
+}
+
+svg#acessibility-icon {
+  color: #004b97;
+}
+
+#dropdown-toolbar {
+  position: fixed;
+  font-size: 16px !important;
+  line-height: 1.4;
+  z-index: 9999
+}
+
+#dropdown-toolbar {
+  right: -180px;
+  -webkit-transition: right 750ms cubic-bezier(.23, 1, .32, 1);
+  -moz-transition: right 750ms cubic-bezier(.23, 1, .32, 1);
+  -o-transition: right 750ms cubic-bezier(.23, 1, .32, 1);
+  transition: right 750ms cubic-bezier(.23, 1, .32, 1)
+}
+
+#dropdown-toolbar {
+  right: 0
+}
+
+#dropdown-toolbar.dropdown-toolbar-toggle {
+  right: 180px
+}
+
+#dropdown-toolbar.dropdown-toolbar-left {
+  left: -180px;
+  -webkit-transition: left 750ms cubic-bezier(.23, 1, .32, 1);
+  -moz-transition: left 750ms cubic-bezier(.23, 1, .32, 1);
+  -o-transition: left 750ms cubic-bezier(.23, 1, .32, 1);
+  transition: left 750ms cubic-bezier(.23, 1, .32, 1)
+}
+
+#dropdown-toolbar.dropdown-toolbar-left.dropdown-toolbar-open {
+  left: 0
+}
+
+#dropdown-toolbar.dropdown-toolbar-left .dropdown-toolbar-toggle {
+  left: 180px
+}
+
+
+#dropdown-toolbar .dropdown-toolbar-toggle {
+  position: absolute
+}
+
+#dropdown-toolbar .dropdown-toolbar-toggle a {
+  display: inline-block;
+  font-size: 200%;
+  line-height: 0;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+}
+
+/* Footer */
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    display: inline-flex !important;
+    margin-top: 5px;
+}
+
 @media (min-width: 1024px) and (max-width: 1120px) {
   div.container-logo {
     padding: 10px 0px 0px 140px;
@@ -352,6 +488,35 @@ p.by-night {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
+    h2.title-car {
+    width: 240px;
+    margin-left: 140px;
+    margin-top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 130%;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  p.subtitle {
+    width: 240px;
+    height: 52px;
+    margin-left: 140px;
+    margin-top: 22px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+
+    font-stretch: 100;
+  }
+
   h4.subtitle {
     width: 240px;
     height: 52px;
@@ -366,6 +531,10 @@ p.by-night {
 
     font-stretch: 100;
   }
+
+div.car-container img {
+    width: 100%;
+}
 
   img.suitcases {
     width: 450px;
@@ -455,13 +624,22 @@ p.by-night {
     color: #403937;
   }
 
-  /*div.card */{
-    background: url(../assets/img/edificio.png);
+  /* div.cardcar {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background: white !important;
+    border-radius: 0px 0px 31px 31px;
+} */
+
+  div.card-hosting {
     border-radius: 31px;
     width: 300px;
     height: 473px;
     margin-left: 50px;
     margin-top: 60px;
+    background: #FFFFFF;
   }
 
   .card__container {
@@ -479,7 +657,6 @@ p.by-night {
   div.container-logo {
     padding: 13px 0px 0px 30px;
     width: 620px;
-    /* height: 65px; */
   }
 
   a.item {
@@ -547,13 +724,13 @@ p.by-night {
     color: #403937;
   }
 
-  //*div.card*// {
-    background: url(../assets/img/edificio.png);
+  div.card-hosting {
     border-radius: 31px;
     width: 300px;
     height: 473px;
     margin-left: 50px;
     margin-top: 60px;
+    background: #FFFFFF;
   }
 
   .card__container {
