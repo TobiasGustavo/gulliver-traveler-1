@@ -17,10 +17,26 @@ body {
   margin: auto;
   padding: 1rem;
 }
+div.header-container {
+  display: block;
+  background: white;
+  width: 420px;
+  border-radius: 31px;
+}
 
-.header-titles h2 {
+div.header-text {
+  padding: 20px;
+}
+div.header-titles h2 {
   font-weight: 800;
   font-size: 3.2rem;
+  color: var(--headings-color);
+}
+
+div.header-titles-car h2 {
+  margin-top: 30px;
+  font-weight: 800;
+  font-size: 2rem;
   color: var(--headings-color);
 }
 
@@ -147,13 +163,51 @@ section.grid-container {
   display: grid;
 }
 
-img.card-item {
+
+section.grid-container-car {
+  /* max-width: 1260px; */
+  grid-template-columns: auto auto ;
+  display: grid;
+  float: right;
+  margin: auto;
+
+}
+
+section.grid-containertext {
+  grid-template-columns: auto auto ;
+  justify-content: left;
+  align-items: left;
+  display: grid;
+  
   border-radius: 31px;
-  width: 354px;
-  height: 473px;
   margin-left: 50px;
   margin-top: 60px;
+
+
 }
+
+div.grid-containercar {
+  grid-template-columns: auto auto ;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+  div.cardcar {
+    border-radius: 31px;
+    width: 354px;
+    height: 473px;
+    margin-left: 50px;
+    margin-top: 60px;
+    background: white !important;
+    border-radius: 0px 0px 31px 31px;
+  }
+
+  div.cardcar > .card-img-top  {
+    width: 100%;
+    height: 250px;
+    border-radius: 31px 31px 0px 0px;
+
+  }
 
 img.card-content {
   width: 354px;
@@ -196,12 +250,6 @@ a.link__card {
 p {
   margin-bottom: 0px !important;
 }
-
-/* div.card:nth-child(2) {
-  background: url(../assets/img/hospedagens/ibis-styles-1.jpg);
-  background-repeat: no-repeat;
-} */
-
 
 .card__container {
   width: 353px;
@@ -412,6 +460,14 @@ svg#acessibility-icon {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
 }
 
+/* Footer */
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    display: inline-flex !important;
+    margin-top: 5px;
+}
+
 @media (min-width: 1024px) and (max-width: 1120px) {
   div.container-logo {
     padding: 10px 0px 0px 140px;
@@ -432,6 +488,35 @@ svg#acessibility-icon {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
+    h2.title-car {
+    width: 240px;
+    margin-left: 140px;
+    margin-top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 130%;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  p.subtitle {
+    width: 240px;
+    height: 52px;
+    margin-left: 140px;
+    margin-top: 22px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+
+    font-stretch: 100;
+  }
+
   h4.subtitle {
     width: 240px;
     height: 52px;
@@ -446,6 +531,10 @@ svg#acessibility-icon {
 
     font-stretch: 100;
   }
+
+div.car-container img {
+    width: 100%;
+}
 
   img.suitcases {
     width: 450px;
@@ -535,6 +624,15 @@ svg#acessibility-icon {
     color: #403937;
   }
 
+  /* div.cardcar {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background: white !important;
+    border-radius: 0px 0px 31px 31px;
+} */
+
   div.card-hosting {
     border-radius: 31px;
     width: 300px;
@@ -559,7 +657,6 @@ svg#acessibility-icon {
   div.container-logo {
     padding: 13px 0px 0px 30px;
     width: 620px;
-    /* height: 65px; */
   }
 
   a.item {
